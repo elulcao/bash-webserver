@@ -39,3 +39,9 @@ Check the server: `curl localhost:80`
     </body>
 </html>
 ```
+
+## Install from the command line
+
+```bash
+docker pull ghcr.io/elulcao/bash-webserver:latest
+````
