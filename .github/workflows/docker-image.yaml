@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
       - name: Docker login
@@ -19,7 +18,7 @@ jobs:
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag bash-webserver:$(date +%s)
+        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}:$(date +%s)
       - name: Docker push
         run: |
-          docker push ${{secrets.DOCKER_USER}}/ash-webserver
+          docker push ${{secrets.DOCKER_USER}}/bash-webserver
