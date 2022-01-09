@@ -46,6 +46,14 @@ Check the server: `curl localhost:80`
 
 ## Install from the command line
 
+### GitHub Container Registry
+
 ```bash
 docker pull ghcr.io/elulcao/bash-webserver:latest
+```
+
+### Docker Hub
+
+```bash
+docker pull docker.io/elulcao/bash-webserver:latest
 ````
