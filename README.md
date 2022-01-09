@@ -1,5 +1,9 @@
 # bash-webserver
 
+[![GitHub Registry C](https://github.com/elulcao/bash-webserver/actions/workflows/github-registry.yaml/badge.svg)](https://github.com/elulcao/bash-webserver/actions/workflows/github-registry.yaml)
+[![Docker Hub CI](https://github.com/elulcao/bash-webserver/actions/workflows/docker-registry.yaml/badge.svg)](https://github.com/elulcao/bash-webserver/actions/workflows/docker-registry.yaml)
+
+
 ---
 
 <p
