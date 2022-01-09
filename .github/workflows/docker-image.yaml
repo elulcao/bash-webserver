@@ -18,7 +18,7 @@ jobs:
         run: |
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}:$(date +%s)
+        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/bash-webserver:$(date +%s)
       - name: Docker push
         run: |
           docker push ${{secrets.DOCKER_USER}}/bash-webserver
