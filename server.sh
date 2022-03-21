@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 while :; do nc -q 1 -l 8080 <<EOF
 HTTP/1.1 200 OK
